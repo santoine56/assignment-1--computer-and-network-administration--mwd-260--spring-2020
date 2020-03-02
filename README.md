@@ -35,7 +35,7 @@ Errors, access events, and system logs in Linux are kept in a pseudo-filesystem 
 
 ```bash
 ```
-
+tail -f -n /var/log/syslog
 ---
 
 ## / 2
@@ -83,3 +83,4 @@ The `du` command will output disk, or file space, usage. Write a variant of the 
 
 ```bash
 ```
+du -hsc *
