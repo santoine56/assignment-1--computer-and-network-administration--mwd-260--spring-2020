@@ -34,8 +34,9 @@ Issue a pull request back into the original repo, the one from which your forked
 Errors, access events, and system logs in Linux are kept in a pseudo-filesystem that is retained in memory, not non-volatile storage, and is designed for system admins. Write a command that monitors and updates in real time system changes, such as USB connections. (**25pts**)
 
 ```bash
+tail -f -n 5/var/log/syslog
 ```
-tail -f -n /var/log/syslog
+
 ---
 
 ## / 2
@@ -60,6 +61,7 @@ State: S (sleeping)
 **Hint**: You may need to pipe the output of one command into another.
 
 ```bash
+ps -ef | grep root
 ```
 
 ---
@@ -82,5 +84,5 @@ The `du` command will output disk, or file space, usage. Write a variant of the 
 ```
 
 ```bash
-```
 du -hsc *
+```
